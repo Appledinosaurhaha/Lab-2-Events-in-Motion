@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Interactive Webpage</h1>
+        <p id="time-display">Page loaded at: <span id="time"></span></p>
+
+        <!-- Change 1: Button click event -->
+        <button id="color-btn">Change Background Color</button>
+
+        <!-- Change 2: Keyboard input event -->
+        <div class="input-section">
+            <label for="user-input">Type something (updates live):</label>
+            <input type="text" id="user-input" placeholder="Type here...">
+            <p id="output-text">Your text will appear here.</p>
+        </div>
+        <!-- Change 3: Window resize / BOM feature -->
+        <div class="bom-section">
+            <p>Browser Window Width: <span id="window-width"></span>px</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
